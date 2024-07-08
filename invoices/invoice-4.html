@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping Label</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Almarai", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .label-container {
+        width: 350px;
+        background: #fff;
+        border: 1px solid #000;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      .logo {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .express {
+        background: #0e9702;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      .qr-code {
+        width: 100px;
+        height: 100px;
+      }
+      .shipping-code {
+        margin: 0;
+        font-size: 20px;
+      }
+      .qr-code img {
+        width: 100%;
+        height: 100%;
+      }
+      .shipping-label {
+        color: #924813;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .contact-info {
+        text-align: left;
+        margin: 0;
+      }
+      .contact-info p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .contact-info i {
+        margin-right: 10px;
+      }
+      .footer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        width: 73%;
+      }
+      .footer p {
+        font-size: 10px;
+        margin: 0;
+      }
+      .purple {
+        color: #7f0da5;
+      }
+      .contact-name {
+        font-size: 18px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: 600;
+        width: 74%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="label-container">
+      <img src="logo-invoice-3.png" alt="Logo" class="logo" />
+      <div class="express">Express</div>
+      <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code" />
+      </div>
+      <p class="shipping-code">290724-01</p>
+      <p class="shipping-label">Shipping Label</p>
+      <p class="contact-name purple">Mohammed Khalid</p>
+      <div class="contact-info">
+        <p>
+          <i class="fas fa-envelope"></i>
+          khaledmohamed@gmail.com
+        </p>
+        <p>
+          <i class="fas fa-location-arrow"></i>
+          Istanbul, Turkey
+        </p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          Mimar hayrettin mah. Yahyapasa
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          +9658521452144
+        </p>
+      </div>
+      <div class="footer">
+        <p>Weight: 5kg</p>
+        <p>Dimension: 15*07*08(50kg)</p>
+      </div>
+    </div>
+  </body>
+</html>

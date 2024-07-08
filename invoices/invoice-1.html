@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      body {
+        font-family: "Almarai", sans-serif;
+      }
+      .purple {
+        color: #7f0da5;
+      }
+      .invoice-container {
+        width: 595px;
+        height: 842px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+      }
+      .invoice-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+      .invoice-header div {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+      }
+      .qr-code {
+        width: 130px;
+        height: 130px;
+        background-size: contain;
+        overflow: hidden;
+      }
+
+      .qr-code img {
+        width: 130px;
+        height: 130px;
+      }
+      .addresses {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .address-box {
+        width: 270px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .address-box h4 {
+        font-weight: 700;
+        font-size: 16px;
+        color: #7f0da5;
+        margin: 0;
+      }
+
+      .table-container {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .table-container th,
+      .table-container td {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+      }
+      .table-container th {
+        font-weight: 700;
+        font-size: 11px;
+        color: #7f0da5;
+      }
+      .table-container td {
+        font-weight: 700;
+        font-size: 11px;
+        color: #000000;
+      }
+
+      .purple {
+        color: #7f0da5;
+      }
+
+      .dark-orange {
+        color: #924813;
+      }
+
+      .jll-1465 {
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .jklas-23 {
+        font-size: 11px;
+        margin-bottom: 2px;
+        font-weight: 600;
+      }
+      .jk28 {
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invoice-container">
+      <div class="invoice-header">
+        <div>
+          <p><span class="purple">Invoice Date</span> 26.06.2024</p>
+          <p><span class="purple">Invoice Number</span> 1154451</p>
+        </div>
+        <div class="qr-code">
+          <img src="./qr-code.png" alt="qrcode" />
+        </div>
+        <span class="dark-orange jk28">Invoice</span>
+      </div>
+      <div class="addresses">
+        <div>
+          <h4 class="purple">Sender Name & Address</h4>
+          <div class="address-box">
+            <p class="jklas-23">Mohammed Khalid Khalid Khalid Khalid Khalid</p>
+            <p class="jklas-23">MIMAR HAYRETTIN MAH. YAHYAPASA</p>
+            <p class="jklas-23">AZAK BIG CENTER NO: 130 KAPI NO: 179 FATIH</p>
+            <p class="jklas-23">34125/ISTANBUL/Turkey</p>
+          </div>
+          <p class="jll-1465">
+            <span class="purple">Contact Person</span> Mohammed Khalid Khaled
+          </p>
+          <p class="jll-1465">
+            <span class="purple">Phone</span> 0542 321 4950
+          </p>
+          <p class="jll-1465">
+            <span class="purple">E-Mail</span> gmetxx@gmail.com
+          </p>
+        </div>
+        <div>
+          <h4 class="purple">Invoice Name & Address</h4>
+          <div class="address-box">
+            <p class="jklas-23">Mohammed Khalid Khalid Khalid Khalid Khalid</p>
+            <p class="jklas-23">MIMAR HAYRETTIN MAH. YAHYAPASA</p>
+            <p class="jklas-23">AZAK BIG CENTER NO: 130 KAPI NO: 179 FATIH</p>
+            <p class="jklas-23">34125/ISTANBUL/Turkey</p>
+          </div>
+          <p class="jll-1465">
+            <span class="purple">Contact Person</span> Mohammed Khalid Khaled
+          </p>
+          <p class="jll-1465">
+            <span class="purple">Phone</span> 0542 321 4950
+          </p>
+          <p class="jll-1465">
+            <span class="purple">E-Mail</span> gmetxx@gmail.com
+          </p>
+          <p class="jll-1465"><span class="purple">Currency</span> USD</p>
+        </div>
+      </div>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Description of goods</th>
+            <th>Custom commodity code</th>
+            <th>Country of origin</th>
+            <th>Unit price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>5013456000000</td>
+            <td>Turkey</td>
+            <td>25.00</td>
+            <td>1</td>
+            <td>25.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>25.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

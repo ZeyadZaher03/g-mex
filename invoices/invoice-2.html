@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tashsilat Makbuzu</title>
+    <style>
+      body {
+        font-family: "Almarai", sans-serif;
+      }
+      .invoice-container {
+        width: 595px;
+        height: 842px;
+        background: #ffffff;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .logo {
+        width: 350px;
+        height: auto;
+      }
+      .qr-code {
+        width: 150px;
+        height: 150px;
+      }
+      .info {
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+      .info p {
+        margin: 5px 0;
+      }
+      .purple-text {
+        color: #7f0da5;
+        font-weight: bold;
+      }
+      .table-container {
+        margin-top: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+        height: 30px;
+      }
+      th {
+        padding: 10px;
+        text-align: center;
+      }
+      .signature {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-top: 100px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invoice-container">
+      <div class="header">
+        <div class="logo-container">
+          <img src="logo-invoice-2.png" alt="Logo" class="logo" />
+          <div class="info">
+            <p>MIMAR HAYRETTIN MAH. YAHYAPASA</p>
+            <p>AZAK BIG CENTER NO: 13 IC KAPI NO: 179 FATIH</p>
+            <p>Tel <span class="purple-text">+90 542 453 40 40</span></p>
+          </div>
+        </div>
+        <div>
+          <p class="purple-text">Tashsilat Makbuzu</p>
+          <img src="qr-code.png" alt="QR Code" class="qr-code" />
+        </div>
+      </div>
+      <div class="signature">
+        <p>........................................................</p>
+        <p>...../...../..........</p>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Adet</th>
+              <th>Acikiama</th>
+              <th>Kilo</th>
+              <th>Fiyat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
